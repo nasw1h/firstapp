@@ -1,7 +1,7 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,flutter,dart,androidstudio,intellij
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,flutter,dart,androidstudio,intellij
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,intellij+all,flutter,dart,androidstudio
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,intellij+all,flutter,dart,androidstudio
 
 ### Dart ###
 # See https://www.dartlang.org/guides/libraries/private-files
@@ -95,7 +95,7 @@ lib/generated_plugin_registrant.dart
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
-### Intellij ###
+### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -171,35 +171,21 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### Intellij Patch ###
-# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+### Intellij+all Patch ###
+# Ignores the whole .idea folder and all .iml files
+# See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
 
-# *.iml
-# modules.xml
-# .idea/misc.xml
-# *.ipr
+.idea/
+
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
 
 # Sonarlint plugin
-# https://plugins.jetbrains.com/plugin/7973-sonarlint
-.idea/**/sonarlint/
-
-# SonarQube Plugin
-# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
-.idea/**/sonarIssues.xml
-
-# Markdown Navigator plugin
-# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
-.idea/**/markdown-navigator.xml
-.idea/**/markdown-navigator-enh.xml
-.idea/**/markdown-navigator/
-
-# Cache file creation bug
-# See https://youtrack.jetbrains.com/issue/JBR-2257
-.idea/$CACHE_FILE$
-
-# CodeStream plugin
-# https://plugins.jetbrains.com/plugin/12206-codestream
-.idea/codestream.xml
+.idea/sonarlint
 
 ### macOS ###
 # General
@@ -290,7 +276,6 @@ proguard/
 /*/*/production
 captures/
 .navigation/
-*.ipr
 *~
 *.swp
 
@@ -311,7 +296,6 @@ gen-external-apklibs
 obj/
 
 # IntelliJ IDEA
-*.iml
 /out/
 
 # User-specific configurations
@@ -324,7 +308,6 @@ obj/
 .idea/compiler.xml
 .idea/copyright/profiles_settings.xml
 .idea/encodings.xml
-.idea/misc.xml
 .idea/modules.xml
 .idea/scopes/scope_settings.xml
 .idea/dictionaries
@@ -376,7 +359,7 @@ hs_err_pid*
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,flutter,dart,androidstudio,intellij
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,intellij+all,flutter,dart,androidstudio
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 

@@ -8,7 +8,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   @override
   void initState() {
     super.initState();
@@ -21,14 +20,11 @@ class _HomeState extends State<Home> {
         child: Column(
           children: <Widget>[
             FlatButton.icon(
-              onPressed: () {
-                Navigator.pushNamed(context, '/location');
-              },
-              icon: Icon(Icons.edit_location),
-              label: Text(
-                'Edit Location'
-              )
-            )
+                onPressed: () {
+                  Navigator.pushNamed(context, '/location');
+                },
+                icon: Icon(Icons.edit_location),
+                label: Text('Edit Location'))
           ],
         ),
       ),

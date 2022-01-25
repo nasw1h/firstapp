@@ -35,6 +35,13 @@ class _HomeState extends State<Home> {
               )
             ),
             SizedBox(height: 20.0),
+            Row(
+              children: <Widget>[
+                Text(
+                  data['location'],
+                ),
+              ],
+            )
           ],
         ),
       ),

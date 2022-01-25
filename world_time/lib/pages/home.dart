@@ -34,6 +34,7 @@ class _HomeState extends State<Home> {
                 'Edit Location'
               )
             ),
+            SizedBox(height: 20.0),
           ],
         ),
       ),
